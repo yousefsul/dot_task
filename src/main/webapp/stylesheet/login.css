@@ -1,0 +1,29 @@
+.login-container{
+    text-align: center;
+    width: 50vw;
+    padding: 5vw;
+    margin: 5vw auto auto;
+    background-color: darkgray;
+}
+.login-header{
+    font-family: "Lucida Handwriting", cursive;
+    color: white;
+    background-color: black;
+
+}
+input{
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    width: 25vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input[type="submit"]{
+width: 5vw;
+}
+body{
+    margin: 0;
+}

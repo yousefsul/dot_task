@@ -5,7 +5,6 @@
     <title>DOT Task</title>
     <link rel="stylesheet" href="stylesheet/index.css">
 </head>
-
 <body>
 
 <div class="header-container">
@@ -16,7 +15,7 @@
 <div class="navbar-container">
     <ul class="navbar_list">
         <li class="navbar_list">
-            <a href="#" class="navbar-links">Login</a>
+            <a href="login.html" class="navbar-links">Login</a>
         </li>
         <li class="navbar_list">
             <a href="#" class="navbar-links">About</a>

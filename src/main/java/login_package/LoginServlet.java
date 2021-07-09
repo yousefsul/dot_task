@@ -29,10 +29,10 @@ public class LoginServlet extends HttpServlet {
         LoginDao loginDao = new LoginDao();
 
         if(loginDao.validate(loginBean)){
-            response.sendRedirect("loginSuccess.jsp");
+            response.sendRedirect("students_List.jsp");
         }
         else {
-            
+
             response.setContentType("text/html");
             response.sendRedirect("login.html");
         }

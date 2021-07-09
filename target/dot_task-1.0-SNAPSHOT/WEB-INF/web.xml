@@ -13,4 +13,13 @@
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>StudentsListServlet</servlet-name>
+        <servlet-class>studentList_package.StudentsListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentsListServlet</servlet-name>
+        <url-pattern>/students_List.jsp</url-pattern>
+    </servlet-mapping>
 </web-app>

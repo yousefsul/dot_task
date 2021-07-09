@@ -54,4 +54,30 @@ public class StudentListDao {
     }
 
 
+    public void add_student(Student student) {
+        loadDriver(databaseDriver);
+        Connection connection = getConnection();
+        String name = student.getName();
+        int mark = student.getMark();
+        String gender = student.getGender();
+
+//        String sqlQuery = "INSERT INTO students(name, mark, gender) VALUES ('name')";
+
+        String sqlQuery = " insert into students (name, mark, gender)" + " values (?, ?, ?)";
+        PreparedStatement preparedStatement;
+
+        try {
+            preparedStatement = connection.prepareStatement(sqlQuery);
+
+//            PreparedStatement preparedStmt = connection.prepareStatement(sqlQuery);
+            preparedStatement.setString(1, name);
+            preparedStatement.setInt(2, mark);
+            preparedStatement.setString(3, gender);
+            preparedStatement.execute();
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
